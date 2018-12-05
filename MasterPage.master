@@ -1,16 +1,21 @@
 ﻿<%--Ben Cowan 2018-11-09
-	 SWDV 235 Project 1--%>
+	 SWDV 235 Project 3--%>
 
-<%--Create a default (home) web form for your disk inventory database using a master page. Create another 
-	 page for entry of borrower information from the master page. All entry fields are validated using ASP 
-	 controls but not written to the database yet. Build place-holder (or under construction) pages for 
-	 disks & artists. Functionality for these pages will be added later but include them in the navigation. 
-	 Each page has working navigation to the other pages in your site. The master page includes site CSS. 
-	 See Chapter 3 for additional information on CSS & Bootstrap.--%>
+<%--Allow insert, update & delete of artist, disk & borrower rows in the disk inventory tables using the pages created 
+	 in the previous project. All data is validated upon entry and gives meaningful direction to the user when the data 
+	 fails validation. Each page has working navigation to the other pages in your site. Data is added/deleted/updated 
+	 to the database using stored procedures when the input passes appropriate validation executed by a non-sa user.--%>
 
 <%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
+
+<!--Ben Cowan 2018-11-09
+	 SWDV 235 Project 3-->
+<!--Allow insert, update & delete of artist, disk & borrower rows in the disk inventory tables using the pages created 
+	 in the previous project. All data is validated upon entry and gives meaningful direction to the user when the data 
+	 fails validation. Each page has working navigation to the other pages in your site. Data is added/deleted/updated 
+	 to the database using stored procedures when the input passes appropriate validation executed by a non-sa user.-->
 
 <html>
 	 <%--let's get all our head information and links in here--%>
@@ -35,9 +40,10 @@
 					 <%--here's the nav elements --%>
 				<nav>
 					 <ul>
-						  <li><a href="Borrower.aspx">Borrower</a></li>
-						  <li><a href="Disk.aspx">Disk</a></li>
-						  <li><a href="Artist.aspx">Artist</a></li>
+						  <li><a href="CheckOutDisk.aspx">Check Out</a></li>
+						  <li><a href="Borrowers.aspx">Borrowers</a></li>
+						  <li><a href="Disks.aspx">Disks</a></li>
+						  <li><a href="Artists.aspx">Artists</a></li>
 					 </ul>
 				</nav>
 
