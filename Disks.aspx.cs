@@ -20,7 +20,6 @@ public partial class Disk : System.Web.UI.Page
 
 	 protected void grdCategories_RowUpdated(object sender, GridViewUpdatedEventArgs e)
 	 {
-		  lblError.Text = "we at least made it here";
 		  if (e.Exception != null)
 		  {
 				lblError.Text = DatabaseErrorMessage(e.Exception.Message);

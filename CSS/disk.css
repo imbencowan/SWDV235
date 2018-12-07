@@ -4,7 +4,8 @@ SWDV235 Project 3*/
 /*standard, light background*/
 body {
 	font-size: 100%;
-	background-color: #eee;
+	background-image: linear-gradient(150deg, #f0f0f0, #b6b6b6);
+	min-height: 1200px;
 }
 
 .container {
@@ -32,12 +33,12 @@ nav ul li {
 main {
 	width: 100%;
 	margin: auto;
-	border: 10px solid #888;
-	border-radius: 0px 0px 18px 18px;
+	border: 13px solid #888;
+	border-radius: 0px 0px 22px 22px;
 	background-color: #000;
 	color: #eee;
 	font-size: 110%;
-	padding: 10px;
+	padding: 25px;
 	min-height: 400px;
 }
 
@@ -69,4 +70,12 @@ table {
 /*this also was attempting to keep the edit option for the grid view from making the grid view overflow it's container*/
 input[type=text] {
 	max-width: 160px;
+}
+
+.indent {
+	margin-left: 4%;
+}
+
+.smaller {
+	font-size: 90%;
 }
